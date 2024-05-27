@@ -186,7 +186,7 @@
 }
 
 .bgTrans2 {
-    background-color: #6666bc8f;
+    background-color: #6666bc80;
 }
 
 .boxSha1 {
@@ -200,4 +200,12 @@
 .blur2 {
     --tw-blur: blur(0.5px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.placeHolder::placeholder {
+    text-shadow: 0px 0px 1.5px #c04269;
+}
+
+.boxSha2 {
+    box-shadow: 0px 0px 6px #c0426a8a;
 }
