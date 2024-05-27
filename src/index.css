@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "baba";
+    src: url("../src/fonts/adbalumo/Agbalumo/Agbalumo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "doodle";
+    src: url("../src/fonts/adbalumo/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf");
+}
+
+@font-face {
+    font-family: "work";
+    src: url("../src/fonts/adbalumo/Workbench/static/Workbench-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "roboto";
+    src: url("../src/fonts/adbalumo/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OFL";
+    src: url("../src/fonts/adbalumo/Protest_Riot/ProtestRiot-Regular.ttf");
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("../src/fonts/Bebas_Neue/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "lit";
+    src: url("../src/fonts/Bebas_Neue/liltia/LilitaOne-Regular.ttf");
+}
+
+.color1 {
+    background-color: #c04269;
+}
+
+/* .text {
+    text-color
+} */
+
+.text1 {
+    text-shadow: 2px 2px 3px black;
+}
+
+.text2 {
+    text-shadow: 1px 1px 2px #c04269;
+}
+
+.text3 {
+    text-shadow: 0px 0px 2px #c04269;
+}
+
+.text4 {
+    text-shadow: 1px 1px 2px white; 
+}
+
+.text5 {
+    text-shadow: 0px 0px 2px black;
+}
+
+.img1 {
+    background-image: url("../src/assets/bg3.jpg");
+    background-position:  center;
+    background-size: cover;
+}
+
+.bgTrans {
+    background-color: #6666bc56;
+}
+
+.bgPerson {
+    background-image: url("../src/assets/im4.jpeg");
+    background-size: cover;
+}
+
+.textSpace {
+    letter-spacing: 6px;
+}
+
+.boxSha:hover {
+    box-shadow: 2px 2px 7px white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.ask {
+    background-image: url("../src/assets/im4.jpeg");
+}
+
+.line {
+    line-height: 1em;
+}
+
+.node::before {
+    content: "";
+    background-image: url("./fonts/font-icons/svgs/solid/circle-check.svg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.anime1 {
+    animation-name: slide-d;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-d {
+    0% {
+       transform: translateY(-60px);
+    }
+
+    /* 100% {
+        transform: translateY(60px);
+     } */
+}
+
+.anime2 {
+    animation-name: slide-r;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-r {
+    0% {
+        transform: translateX(170px);
+    }
+
+    /* 100% {
+        transform: translateX(-170px)
+    } */
+}
+
+.anime3 {
+    animation-name: slide-l;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-l {
+    0% {
+        transform: translateX(-170px);
+    }
+
+    /* 100% {
+        transform: translateX(170px)
+    } */
+}
+
+.anime4 {
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+    0% {
+        transform: translateX(10x);
+    }
+
+    33% {
+        transform: translateY(10px)
+    }
+    66% {
+        transform: translateX(-10px)
+    }
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+.bg2 {
+    background-image: url("../src/assets/bg1.jpg");
+}
+
+.bgTrans2 {
+    background-color: #6666bc8f;
+}
+
+.boxSha1 {
+    box-shadow: 2px 2px 7px black;
+}
+
+.boxSha1:hover {
+    box-shadow:  0px 3px 4px #c04269;
+}
+
+.blur2 {
+    --tw-blur: blur(0.5px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
