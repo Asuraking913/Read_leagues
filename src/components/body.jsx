@@ -6,35 +6,41 @@ import myImage3 from "./../assets/image1.svg"
 import myImage4 from "./../assets/img5.png"
 import Slide from './slideop'
 
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 function Body() {
     const slideOpt = [
         {
-            img: <i className = 'fa-solid text-[#e8babb] text1 font-[600] fa-book'> </i>,
+            img: <i className = 'fa-solid text-[#fdba74] text1 font-[600] fa-book'> </i>,
             h3: "Novels",
             desc: "Check out our catalogue of novels arranged in an A to Z version "
         }, 
         {
-            img: <i className = 'fa-solid text-[#e8babb] text1 font-light fa-newspaper'> </i>,
+            img: <i className = 'fa-solid text-[#fdba74] text1 font-light fa-newspaper'> </i>,
             h3: "News forum",
             desc: "We provide to you latest news and happenings around the world"
 
         }, 
         {
-            img: <i className = 'fa-solid text-[#e8babb] text1 fa-tv '> </i>,
+            img: <i className = 'fa-solid text-[#fdba74] text1 fa-tv '> </i>,
             h3: "Movies Fandom",
             desc: "Are you a movie fanatic?, check out our page where we review movies for fun"
 
         },
         {
-            img: <i className = 'fa-solid text-[#e8babb] text1 fa-newspaper font-light'> </i>,
+            img: <i className = 'fa-solid text-[#fdba74] text1 fa-newspaper font-light'> </i>,
             h3: "Research Articles",
             desc: "Documentaries of various reasearchs performed by researchers"
         }
     ]
 
-    const listSlide = slideOpt.map(slide => (<Slide image={slide.img} h3={slide.h3} desc={slide.desc}/>))
+    // const listSlide = slideOpt.map(slide => (<Slide image={slide.img} h3={slide.h3} desc={slide.desc}/>))
 
   return (
     <article>
@@ -72,14 +78,50 @@ function Body() {
             <div className='bgTrans2 w-full h-full sm:p-[4em] p-[2em] flex flex-col gap-[1.5em]'>
                 <div className='text-center flex flex-col gap-[0.7em]'>
                     <h2 className='text-4xl capitalize font-[poppins] text-[white] font-extrabold'>Welcome to the league</h2>
-                    <p className='text-[1.2rem] italic font-[lit] text5 text-red-200'>An oasisi for reading</p>
+                    <p className='text-[1.2rem] italic font-[lit] text1 text-[#fdba74]'>An oasisi for reading</p>
                 </div>
 
-                <div className='w-full z-[20] flex justify-center flex-row items-center gap-[2em] h-[100%] '>
-                    
-                    {listSlide}
+                <div className='w-full z-[20] flex justify-center flex-row items-center h-[100%] '>
+                <Swiper
+                    className='h-full w-[90%] hidden sm:flex  justify-between px-[4em] pt-[1em] items-center duration-[3s] mt-[0em]'
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={3}
+                    navigation
+                    loop={true}
+                    pagination={{ clickable: true }}
+                    // scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    >
+                    <SwiperSlide className=''><Slide image={slideOpt[0].img} h3={slideOpt[0].h3} desc={slideOpt[0].desc}/></SwiperSlide>
+                    <SwiperSlide className=' '><Slide image={slideOpt[1].img} h3={slideOpt[1].h3} desc={slideOpt[1].desc}/></SwiperSlide>
+                    <SwiperSlide className=' '><Slide image={slideOpt[2].img} h3={slideOpt[2].h3} desc={slideOpt[2].desc}/></SwiperSlide>
+                    <SwiperSlide className=' '><Slide image={slideOpt[3].img} h3={slideOpt[3].h3} desc={slideOpt[3].desc}/></SwiperSlide>
+                    </Swiper>
+
+                    <Swiper
+                    className='h-full sm3  w-[100%] sm:hidden p-[0.5em]'
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={-20}
+                    slidesPerView={1}
+                    // navigation
+                    // loop={true}
+                    pagination={{ clickable: true }}
+                    // scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    >
+                    <SwiperSlide className='ml-[1.9em] sm2'><Slide image={slideOpt[0].img} h3={slideOpt[0].h3} desc={slideOpt[0].desc}/></SwiperSlide>
+                    <SwiperSlide className='ml-[0.8em] sm2'><Slide image={slideOpt[1].img} h3={slideOpt[1].h3} desc={slideOpt[1].desc}/></SwiperSlide>
+                    <SwiperSlide className='ml-[0.8em] sm2'><Slide image={slideOpt[2].img} h3={slideOpt[2].h3} desc={slideOpt[2].desc}/></SwiperSlide>
+                    <SwiperSlide className='ml-[0.8em] sm2'><Slide image={slideOpt[3].img} h3={slideOpt[3].h3} desc={slideOpt[3].desc}/></SwiperSlide>
+                    </Swiper>
                 </div>
-                <img src={myImage4} className='w-[20%] hidden sm:block absolute object-top h-[520px] object-cover right-[2em] top-[-1.5em]'  alt="" />
+                <img src={myImage4} className='w-[20%] hidden sm:block absolute object-top h-[500px] object-cover right-[2em] top-[-1.5em]'  alt="" />
+                <img src={myImage3} className='w-[20%] absolute top-[20em]' alt="" />
             </div>
         </section>
     </article>

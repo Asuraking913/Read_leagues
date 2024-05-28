@@ -4,8 +4,7 @@ import myImage1 from "./../assets/girl1.png"
 import myImage2 from "./../assets/image3d.png"  
 
 
-function BodyHead
-() {
+function BodyHead() {
   return (
     <div className='h-full w-full bgTrans p-[2em] sm:p-[7em] flex flex-col items-center justify-center gap-[2.5em] sm:gap-[4em]'>
                 <div className='flex flex-col sm:flex-row gap-[3em] sm:gap-[10em] relative items-center'>
@@ -19,7 +18,7 @@ function BodyHead
                             <img src={myImage1} className='absolute ease-linear hidden anime4 sm:block top-[-50px] h-[350px] w-[350px] z-[0]' alt="" />
                             <Search header={true}/>
                         </div>
-                        <img src={myImage2} className='absolute w-[300px] left-[-5em] sm:block hidden top-[10em] h-[400px]' alt="" />
+                        <img src={myImage2} className='absolute w-[300px] left-[-4em] sm:block hidden top-[11em] h-[400px]' alt="" />
                 </div>
                 <div >
                     <div className='bg-white h-[400px] w-[400px] hidden rounded-2xl bgPerson'>
