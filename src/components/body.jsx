@@ -107,7 +107,7 @@ function Body() {
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     spaceBetween={100}
-                    slidesPerView={3}
+                    slidesPerView={2.94}
                     navigation
                     autoplay = {{delay: 4000, disableOnInteraction: false}}
                     loop={true}

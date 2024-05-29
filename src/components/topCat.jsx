@@ -13,15 +13,15 @@ function Categories({h3, desc, image}) {
     return (
       <div className='bg-[white] pt-[0em] p-[1.5em] sm:p-[2em]'>
                   
-                      <div className='bgImg bg-contain  bg-[#c04269]'>
-                      <div className='bg-[#c0426a46] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[12em]'>
+                      <div className='bgImg bg-contain bg-[#c04269]'>
+                      <div className='bg-[#c0426a46] p-[2em] sm:p-[0em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
                         <div className=' h-[100%] rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[2em]'>
                             <h3 className='font-[lit] capitalize text-white text-3xl w-[80%]'>{h3}</h3>
                             <p className='w-[30ch] text-white font-[roboto] italic'>{desc}</p>
                         </div>
                             <div className='p-[2em]'>
                             <Swiper
-                            className='w-[250px] border-2 border-white h-[350px] rounded-[2em] bg-white'
+                            className='sm:w-[250px] w-[300px] border-2 border-white h-[400px] sm:h-[350px] rounded-[2em] bg-white'
                     // install Swiper modules
                     // modules={[Navigation, Pagination, Scrollbar, A11y]}
                     modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
@@ -49,17 +49,17 @@ function Categories({h3, desc, image}) {
 
   else {
     return (
-      <div className='bg-[white] pt-[0em] p-[3em]'>
+      <div className='bg-[white] pt-[0em] rounded-2xl p-[1.5em] sm:p-[2em]'>
                   
                       <div className='bgImg1 bg-contain bg-[#c04269]'>
-                      <div className='bg-[#c0426a46] border-2 border-white h-full w-full text-center items-center flex justify-center gap-[12em]'>
-                        <div className=' h-[100%]  rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[2em]'>
+                      <div className='bg-[#c0426a46] p-[2em] sm:p-[0em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
+                        <div className=' h-[100%]  rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[0em]'>
                             <h3 className='font-[lit] capitalize text-white text-3xl w-[80%]'>{h3}</h3>
                             <p className='w-[30ch] text-white font-[roboto] italic'>{desc}</p>
                         </div>
                             <div className='p-[2em]'>
                             <Swiper
-                            className='w-[250px] border-2 border-white h-[350px] rounded-[2em] bg-white'
+                            className='sm:w-[250px] w-[300px] border-2 border-white h-[400px] sm:h-[350px] rounded-[2em] bg-white'
                     // install Swiper modules
                     // modules={[Navigation, Pagination, Scrollbar, A11y]}
                     modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
