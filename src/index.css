@@ -59,7 +59,7 @@
 }
 
 .text4 {
-    text-shadow: 1px 1px 2px white; 
+    text-shadow: 0px 0px 2px white; 
 }
 
 .text5 {
@@ -69,6 +69,11 @@
 .img1 {
     background-image: url("../src/assets/bg3.jpg");
     background-position:  center;
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url("../src/assets/image1.svg");
     background-size: cover;
 }
 
@@ -212,20 +217,30 @@
 
 .swiper-button-next {
     color: #fdba74;
-    text-shadow: 1px 1px 4px black;
-    margin-right: 3em;
+    text-shadow: 0px 0px 6px black; 
+    /* margin-right: 3em; */
     font-size: 1.5em;
+}
+
+.swiper-button-next:hover {
+    color: white;
+    text-shadow: 0px 0px 6px #fdba74; 
+}
+
+.swiper-button-prev:hover {
+    color: white;
+    text-shadow: 0px 0px 6px #fdba74; 
 }
 
 .swiper-button-prev {
     color: #fdba74;
-    text-shadow: 1px 1px 4px black;
+    text-shadow: 0px 0px 6px black; 
     font-size: 1.5em;
 }
 
 .swiper-pagination-bullet {
     background-color: #fdba74;
-    text-shadow: 1px 1px 4px black;
+    box-shadow: 0px 0px 8px black;
     font-size: 1.5em;
 }
 
@@ -269,4 +284,13 @@
         height: 75%;
     }
     
+}
+
+.bgImg {
+   background-image: url("../src/assets/devils.jpeg"); 
+}
+
+.bgImg1{
+   background-image: url("../src/assets/nian.jpeg"); 
+
 }

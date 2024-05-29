@@ -4,7 +4,7 @@ import React from 'react'
 function Header() {
   return (
     <div className='color1 p-[.8em] sm:p-[0.5em] sm:px-[1.5em] flex items-center justify-between'>
-        <a href="#" className="text-[2rem] font-[doodle] text-orange-300">Rleague</a>
+        <a href="#" className="text-[2rem] font-[doodle] text-white">Rleague</a>
         <i className='fa-solid fa-bars font-bold text-[white] hover:scale-125 duration-[0.5s] text-[2em] sm:hidden block'></i>
         <nav className='hidden sm:block'>
             <ul className='gap-[2em] list-none sm:flex items-center justify-center hidden'>
