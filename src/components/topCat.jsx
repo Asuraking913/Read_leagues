@@ -15,9 +15,9 @@ function Categories({h3, desc, image}) {
                   
                       <div className='bgImg bg-contain bg-[#c04269]'>
                       <div className='bg-[#c0426a46] p-[2em] sm:p-[0em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
-                        <div className=' h-[100%] rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[2em]'>
+                        <div className=' h-[100%] rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[1em]'>
                             <h3 className='font-[lit] capitalize text-white text-3xl w-[80%]'>{h3}</h3>
-                            <p className='w-[30ch] text-white font-[roboto] italic'>{desc}</p>
+                            <p className='w-[30ch] text-white font-[poppins] italic'>{desc}</p>
                         </div>
                             <div className='p-[2em]'>
                             <Swiper
@@ -32,8 +32,6 @@ function Categories({h3, desc, image}) {
                     loop={true}
                     // pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                     >
 
                     <SwiperSlide className=''>{image[0]}</SwiperSlide>
@@ -53,9 +51,9 @@ function Categories({h3, desc, image}) {
                   
                       <div className='bgImg1 bg-contain bg-[#c04269]'>
                       <div className='bg-[#c0426a46] p-[2em] sm:p-[0em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
-                        <div className=' h-[100%]  rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[0em]'>
+                        <div className=' h-[100%]  rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[1em]'>
                             <h3 className='font-[lit] capitalize text-white text-3xl w-[80%]'>{h3}</h3>
-                            <p className='w-[30ch] text-white font-[roboto] italic'>{desc}</p>
+                            <p className='w-[30ch] text-white font-[poppins] italic'>{desc}</p>
                         </div>
                             <div className='p-[2em]'>
                             <Swiper
@@ -70,8 +68,6 @@ function Categories({h3, desc, image}) {
                     loop={true}
                     // pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                     >
 
                     <SwiperSlide className=''>{image[0]}</SwiperSlide>

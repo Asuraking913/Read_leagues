@@ -216,32 +216,32 @@
 }
 
 .swiper-button-next {
-    color: #fdba74;
-    text-shadow: 0px 0px 6px black; 
+    color: #676c9af1;
+    text-shadow: 0px 0px 6px white; 
     /* margin-right: 3em; */
     font-size: 1.5em;
 }
 
 .swiper-button-next:hover {
     color: white;
-    text-shadow: 0px 0px 6px #fdba74; 
+    text-shadow: 2px 2px 6px #676c9af1; 
 }
 
 .swiper-button-prev:hover {
     color: white;
-    text-shadow: 0px 0px 6px #fdba74; 
+    text-shadow: 0px 0px 6px #676c9af1; 
 }
 
 .swiper-button-prev {
-    color: #fdba74;
-    text-shadow: 0px 0px 6px black; 
+    color: #676c9af1;
+    text-shadow: 0px 0px 6px white; 
     font-size: 1.5em;
     margin-left: 2em;
 }
 
 .swiper-pagination-bullet {
     background-color: #fdba74;
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 8px #676c9af1;
     font-size: 1.5em;
 }
 
@@ -253,6 +253,17 @@
         margin-left: 1em;
     }
 
+    .footer {
+        /* display: grid; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        font-size: 1rem;
+        
+    }
+
+    .icons {
+        font-size: 0.5rem;
+    }
+
     .sm2:nth-child(2),
     .sm2:nth-child(3),
     .sm2:nth-child(4) {
@@ -262,6 +273,14 @@
 
     .sm3 {
         height: 75%;
+    }
+
+    .textSize {
+        font-size: 1.2rem;
+    }
+
+    .headText {
+        font-size: 2.7rem;
     }
     
 }
@@ -294,4 +313,8 @@
 .bgImg1{
    background-image: url("../src/assets/nian.jpeg"); 
 
+}
+
+.text6 {
+    text-shadow: 2px 2px 1px black;
 }
