@@ -17,7 +17,7 @@ function Search({header}) {
     <div className='hidden sm:block w-full m-[-3em]'>
         <form action="" className='mt-[2em] flex justify-center sm:justify-center'>
             <input type="text" placeholder='Search for a topic....'  className='p-4 boxSha2 text-[poppins] rounded-l-full w-[60%] outline-none text-[1.2em] placeholder-[#fdba74] placeHolder' />
-            <button className='bg-white rounded-r-full flex justify-center items-center text-white'><i className='fa-solid text1 w-full text-[1.6rem] h-full rounded-[50%] bg-[#fdba74] hover: duration-[0.5s] fa-search p-4 px-4 border-2'></i></button>
+            <button className='bg-white rounded-r-full flex justify-center items-center text-white'><i className='fa-solid text1 w-full hover:animate-spin text-[1.6rem] h-full rounded-[50%] bg-[#fdba74] hover: duration-[0.5s] fa-search p-4 px-4 border-2'></i></button>
         </form>
     </div>
   )}

@@ -1,15 +1,16 @@
 import React from 'react'
 import BodyHead from './bodyHead'
-import myImage2 from "./../assets/image3d.png"
-import myImage from "./../assets/bg2.jpg"
-import myImage3 from "./../assets/image1.svg"
-import myImage4 from "./../assets/img5.png"
-import myImage5 from "./../assets/XiawoSan.jpeg"
-import myImage6 from "./../assets/tangClan.jpeg"
-import myImage7 from "./../assets/tangSan.jpeg"
-import myImage8 from "./../assets/nian1.jpeg"
-import myImage9 from "./../assets/empress.jpeg"
-import myImage10 from "./../assets/bing.jpeg"
+import myImage2 from "./../../assets/image3d.png"
+import myImage from "./../../assets/bg2.jpg"
+import myImage3 from "./../../assets/image1.svg"
+import myImage4 from "./../../assets/img5.png"
+import myImage5 from "./../../assets/XiawoSan.jpeg"
+import myImage6 from "./../../assets/tangClan.jpeg"
+import myImage7 from "./../../assets/tangSan.jpeg"
+import myImage8 from "./../../assets/nian1.jpeg"
+import myImage9 from "./../../assets/empress.jpeg"
+import myImage10 from "./../../assets/bing.jpeg"
+import myImage11 from "./../../assets/read.png"
 import Slide from './slideop'
 
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
@@ -18,7 +19,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import Categories from './topCat'
+import Categories from '../topCat'
 
 
 function Body() {
@@ -82,10 +83,10 @@ function Body() {
                 <div className='bg-white w-[60%] rounded-[1em] flex items-center justify-between p-[2em]'>
                     <h2 className='text-4xl font-bold font-[poppins] text-[#c04269]'>The <span className='block'>Read League</span></h2>
                     <ul className='flex flex-col gap-[.5em] list relative mb-[2                     em]'>
-                        <li><i className='fa-solid fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>News Forum</a></li>
-                        <li><i className='fa-solid fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>Novels i.e Martial arts Novels</a></li>
-                        <li><i className='fa-solid fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>Research Articles</a></li>
-                        <li><i className='fa-solid fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>Sign Up Now!!!</a></li>
+                        <li><i className='fa-solid animate-pulse fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>News Forum</a></li>
+                        <li><i className='fa-solid animate-pulse fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>Novels i.e Martial arts Novels</a></li>
+                        <li><i className='fa-solid animate-pulse fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>Research Articles</a></li>
+                        <li><i className='fa-solid animate-pulse fa-circle-check text-green-600 mr-2'></i><a href="" className='node font-[lit] text-[black] text5 hover:underline'>Sign Up Now!!!</a></li>
                         <li className='absolute flex items-center bottom-0 justify-between w-full top-[160px]'>
                             <div className='h-[50px] w-[50px] bg-[#fdba74] anime2 rounded-full '></div>
                             <div className='h-[60px] w-[60px] bg-[#c04269] rounded-full anime3'></div>
@@ -139,6 +140,7 @@ function Body() {
                     </Swiper>
                 </div>
                 <img src={myImage4} className='w-[20%] hidden sm:block absolute object-top h-[500px] object-cover left-0 top-[5.2em]'  alt="" />
+                <img src={myImage11} className='w-[20%] hidden sm:block absolute object-top h-[600px] object-cover right-0 top-[-20em]'  alt="" />
                 {/* <div className='img3 h-[400px] left-[7em] top-[-2em] absolute w-[400px]'><div className='w-full h-full '></div></div> */}
             </div>
         </section>

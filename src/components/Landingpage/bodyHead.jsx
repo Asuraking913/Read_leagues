@@ -1,7 +1,7 @@
 import React from 'react'
 import Search from './searchForm'
-import myImage1 from "./../assets/girl1.png"
-import myImage2 from "./../assets/image3d.png"  
+import myImage1 from "./../../assets/girl1.png"
+import myImage2 from "./../../assets/image3d.png"  
 
 
 function BodyHead() {
@@ -11,7 +11,7 @@ function BodyHead() {
                         <div className='text-center sm:text-center items-center justify-center flex flex-col gap-[1em] sm:w-[50%]'>
                             <p className='text-xl sm:text-2xl font-bold font-[work] text1 text-white '>Do you like reading books? </p>
                             <h1 className=' text1 text-orange-300 headText mb-[0.2em]block text-[3rem] sm:text-[3.5rem] capitalize font-[poppins] font-extrabold line'>Check out <span className='block'>read league!!! </span></h1>
-                            <p className='font-[roboto] italic text-center sm:text-center z-[20] text-[white] text2 font-semibold '>Here at read league, you get to experience the best form of visualisation when reading. Our vast collection consists of research articles, latest news, novels and losts more!</p>
+                            <p className='font-[roboto] italic text-center sm:text-center z-[20] text-[white] text2 font-semibold '>Here at read league, you get to experience the best form of visualisation when reading. Our vast collection consists of research articles, latest news and most especially Novels of different genres</p>
                         </div>
                         <div className=''>
                             {/* <div className=' hidden sm:block sm:w-[350px] h-[300px] bg-cover ask'></div> */}

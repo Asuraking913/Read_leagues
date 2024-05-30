@@ -14,10 +14,11 @@ function Categories({h3, desc, image}) {
       <div className='bg-[white] pt-[0em] p-[1.5em] sm:p-[2em]'>
                   
                       <div className='bgImg bg-contain bg-[#c04269]'>
-                      <div className='bg-[#c0426a46] p-[2em] sm:p-[0em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
+                      <div className='bg-[#c0426a46] p-[2em] sm:p-[1em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
                         <div className=' h-[100%] rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[1em]'>
                             <h3 className='font-[lit] capitalize text-white text-3xl w-[80%]'>{h3}</h3>
                             <p className='w-[30ch] text-white font-[poppins] italic'>{desc}</p>
+                            <a href="" className='font-[lit] text-[1.2em] animate-bounce hover:animate-none text5 text-red-400'>Go to Chapter list</a>
                         </div>
                             <div className='p-[2em]'>
                             <Swiper
@@ -49,11 +50,12 @@ function Categories({h3, desc, image}) {
     return (
       <div className='bg-[white] pt-[0em] rounded-2xl p-[1.5em] sm:p-[2em]'>
                   
-                      <div className='bgImg1 bg-contain bg-[#c04269]'>
-                      <div className='bg-[#c0426a46] p-[2em] sm:p-[0em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
-                        <div className=' h-[100%]  rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[1em]'>
+                      <div className='bgImg1 bg-contain sm: bg-[#c04269]'>
+                      <div className='bg-[#c0426a46] p-[2em] sm:p-[1em] h-full w-full text-center items-center flex flex-col sm:flex-row justify-center gap-[0em] sm:gap-[12em]'>
+                        <div className=' h-[100%]  rounded-2xl bg-[#c0426abb] border-2 border-white flex items-center justify-center flex-col p-[0.5em] gap-[0.5em]'>
                             <h3 className='font-[lit] capitalize text-white text-3xl w-[80%]'>{h3}</h3>
                             <p className='w-[30ch] text-white font-[poppins] italic'>{desc}</p>
+                            <a href="" className='font-[lit] text5 text-[1.2em] animate-bounce hover:animate-none text-red-400'>Go to Chapter list</a>
                         </div>
                             <div className='p-[2em]'>
                             <Swiper
