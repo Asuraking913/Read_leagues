@@ -216,7 +216,7 @@
 }
 
 .swiper-button-next {
-    color: #676c9af1;
+    color: #676c9a8c;
     text-shadow: 0px 0px 6px white; 
     /* margin-right: 3em; */
     font-size: 1.5em;
@@ -233,7 +233,7 @@
 }
 
 .swiper-button-prev {
-    color: #676c9af1;
+    color: #676c9a8c;
     text-shadow: 0px 0px 6px white; 
     font-size: 1.5em;
     margin-left: 2em;
@@ -318,3 +318,12 @@
 .text6 {
     text-shadow: 2px 2px 1px black;
 }
+
+
+
+/* Login page css */
+
+.logBg {
+    background-image: url("../src/assets/bg2.jpg");
+}
+

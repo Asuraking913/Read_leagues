@@ -1,21 +1,22 @@
 import React from 'react'
-import Header from './components/Landingpage/header'
-import Body from './components/Landingpage/body'
 import "./fonts/font-icons/css/all.min.css"
-import Foot from './components//Landingpage/footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Land from './components/pages/land'
+import Loginpage from './components/pages/login'
+import Profile from './components/pages/profile'
+import About from './components/pages/about'
 
 function App() {
   return (
     <div>
-      <header>
-        <Header />
-      </header>
-      <main>
-          <Body />
-      </main>
-      <footer>
-      <Foot />
-      </footer>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Land />}/>
+            <Route path='/login' element={<Loginpage />}/>
+            <Route path='/profile' element={<Profile />}/>
+            <Route path='/about' element={<About />}/>
+          </Routes>
+        </Router>
     </div>
   )
 }

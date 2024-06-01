@@ -19,7 +19,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import Categories from '../topCat'
+import Categories from './topCat'
 
 
 function Body() {
@@ -27,7 +27,7 @@ function Body() {
         {
             img: <i className = 'fa-solid text-[#676c9af1] text6 p-[0.2px] font-[600] fa-book'> </i>,
             h3: "Novels",
-            desc: "Check out our catalogue of novels arranged in an A to Z version "
+            desc: "Check out our catalogue of novels arranged in an A to Z version"
         }, 
         {
             img: <i className = 'fa-solid text-[#676c9af1] text6 p-[0.2px] font-light fa-newspaper'> </i>,
@@ -56,7 +56,7 @@ function Body() {
         }, 
         {
             h3: "Magic Chef of ice and fire", 
-            desc: "Explore the exciting tales of Nian Bing, a god level Chef who later reached the peak of cultivation and cooking. With his divine culinary skills and immense cultivation he fought powerfull enemies and eventually became the best cook with the ability to move emotions of people who tasted his cooking. Eventually he became a god giving ultimate protection to his loved ones",
+            desc: "Explore the exciting tale of Nian Bing, a Chef with divine culinary skills who later reached the peak of cultivation and cooking. With his divine culinary skills and immense cultivation he fought powerfull enemies and eventually became the best cook with the ability to move emotions of people who tasted his cooking. Eventually he became a god giving ultimate protection to his loved ones",
             image: [<img src={myImage8} className='w-[300px] h-[450px] object-cover object-center' alt="" />, <img src={myImage9} className='w-[300px] h-[450px] object-cover object-center' alt="" />, <img src={myImage10} className='w-[300px] h-[450px] object-cover object-center' alt="" />]
         }
     ]

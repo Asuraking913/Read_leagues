@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Foot() {
   return (
     <div className='h-[auto] w-[100%] bg-[#c04269] '>
         <div>
             <ul className='flex footer sm:gap-[10em] justify-between sm:justify-center py-[2em] px-[2em]'>
-                <li><a href="" className='sm:text-3xl icons hover:text-green-100 duration-[0.8s] hover:underline textSize text-xl text-white text5 font-[poppins] font-bold'>About Us</a></li>
+                <Link to="/about">
+                  <li><a href="" className='sm:text-3xl icons hover:text-green-100 duration-[0.8s] hover:underline textSize text-xl text-white text5 font-[poppins] font-bold'>About Us</a></li>
+                </Link>
                 <li><a href="" className='sm:text-3xl icons hover:text-green-100 duration-[0.8s] hover:underline textSize text-xl text-white text5 font-[poppins] font-bold'>Feed Back</a></li>
                 <li><a href="" className='sm:text-3xl icons hover:text-green-100 duration-[0.8s] hover:underline textSize text-xl text-white text5 font-[poppins] font-bold' >Community</a></li>
             </ul>
